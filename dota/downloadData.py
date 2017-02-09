@@ -12,6 +12,7 @@ if __name__ == "__main__":
 #  match = api.get_match_details(match_id=2820318558)
     
     for x in (0,hist["num_results"]):
+    	print("downloadData")
         match = hist["matches"][x]
         r = Match( match_id=match(match_id),match_seq_num=match(match_seq_num),start_time=match(start_time),lobby_type=match(lobby_type))
         r.save()
